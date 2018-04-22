@@ -14,13 +14,14 @@
 <script type="text/babel">
     class Hello extends React.Component {
         render() {
-            return <h1>hello, {this.props.name}</h1>
+            return (
+                <h1>hello, {this.props.name}</h1>);
         }
     }
 const prop  = <Hello name="guys" />;
 ReactDOM.render(
     prop,
-    document.getElementById(content)
+    document.getElementById('content')
 );
 function tick(){
 const test = (
