@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="test.js" type="text/babel"></script>
+    <meta charset="UTF-8">
+    <title>React</title>
+</head>
+<body>
+    <div id="main"></div>
+    <div id="content"></div>
+<script type="text/babel">
+    class Hello extends React.Component {
+        render() {
+            return <h1>hello, {this.props.name}</h1>
+        }
+    }
+const prop  = <Hello name="guys" />;
+ReactDOM.render(
+    prop,
+    document.getElementById(content)
+);
+function tick(){
+const test = (
+    <div>
+    <h1>hello</h1>
+    <h2>it is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+     );
+ReactDOM.render(
+         test,
+    document.getElementById('main')
+);
+}
+setInterval(tick, 1000);
+    </script>
+</body>
+</html>
